@@ -1,0 +1,27 @@
+.main-carousel-wrapper{
+  position:relative;
+}
+
+.ajax-loader-notice{
+  /* Position loader. */
+  position:absolute;
+  width:100%;
+  height:100%;
+  background-color:#fff;
+  /* Hide loader. */
+  opacity:0;
+  transition:opacity 0.25s ease-out;
+}
+
+.ajax-loader-notice p{
+  text-align:center;
+}
+
+.main-carousel-wrapper.js-carousel-loading .ajax-loader-notice,
+.main-carousel-wrapper.js-ajax-loading .ajax-loader-notice{
+  /* Display loader if either the carousel or ajax are still loading. */
+  /* Hide only when BOTH are complete. */
+  /* Use z-index to ensure loader appears above slides. */
+  opacity:1;
+  z-index:10;
+}
