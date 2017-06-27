@@ -3,7 +3,7 @@ description = A subtheme of Bartik
 core = 7.x
 base theme = bartik
 
-stylesheets[all][] = css/mybartik.css
+stylesheets[all][] = css/mystyle.css
 
 scripts[] = js/myscript.js
 
